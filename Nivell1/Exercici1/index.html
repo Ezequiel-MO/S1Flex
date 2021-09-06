@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .upper{
+            border: 15px solid black;
+        }
+
+        .upper_upper{
+            display: flex;
+            background-color: #2D4059;
+            display: flex;
+        }
+
+        .upper_upper-left, .upper_upper-middle, .upper_upper-right{
+            height: 15px;
+            background-color: tomato;
+            flex: 0.25;
+            margin: 10px;
+        }
+
+        .upper_upper-middle{   
+            flex: 0.5;   
+        }
+
+        .upper_upper-right{
+            flex: 0.25;  
+        }
+
+        .upper_lower{
+            border: 10px solid orange;
+        }
+        .upper_lower-full{
+            height: 15px;
+            background-color:#FED460 ;
+        }
+    </style>
+</head>
+<body>
+    <section>Exercici 1</section>
+    <div class="container">
+        <div class="upper">
+            <div class="upper_upper">
+                <div class="upper_upper-left"></div>
+                <div class="upper_upper-middle"></div>
+                <div class="upper_upper-right"></div>
+            </div>
+            <div class="upper_lower">
+                <div class="upper_lower-full"></div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="middle_left">
+                <div class="middle_left-upper"></div>
+                <div class="middle_left-lower"></div>
+            </div>
+            <div class="middle_right"></div>
+        </div>
+        <div class="lower">
+            <div class="lower_full"></div>
+        </div>
+    </div>
+</body>
+</html>
