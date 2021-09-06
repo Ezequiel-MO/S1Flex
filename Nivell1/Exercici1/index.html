@@ -16,14 +16,15 @@
             padding: 10px;
             background-color: #fff;
         }
-        .upper{
+        .upper, .middle, .lower{
             border: 15px solid black;
+            margin: 15px auto;
         }
 
         .upper_upper{
             display: flex;
             background-color: #2D4059;
-            display: flex;
+            
         }
 
         .upper_upper-left, .upper_upper-middle, .upper_upper-right{
@@ -48,6 +49,39 @@
             height: 15px;
             background-color:#FED460 ;
         }
+        .middle{
+            display: flex; 
+            background-color: #4E4E6A;  
+        }
+        .middle_left{
+            flex: 0.8; 
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .middle_right{
+            flex:0.2;
+            background-color: tomato; 
+        }
+
+        .middle_left-upper, .middle_left-lower{
+            height: 15px;
+            flex:0.5;
+            padding: 10px;
+        }
+
+        .middle_left-lower{ 
+             background-color: lightblue;
+             margin: 10px;
+            }
+
+        .middle_left-upper-upper, .middle_left-upper-lower{
+            background-color: blue;
+             margin: 10px;
+             height: 15px;
+            }
+      
+      
     </style>
 </head>
 <body>
@@ -65,7 +99,10 @@
         </div>
         <div class="middle">
             <div class="middle_left">
-                <div class="middle_left-upper"></div>
+                <div class="middle_left-upper">
+                    <div class="middle_left-upper-upper"></div>
+                    <div class="middle_left-upper-lower"></div>
+                </div>
                 <div class="middle_left-lower"></div>
             </div>
             <div class="middle_right"></div>
