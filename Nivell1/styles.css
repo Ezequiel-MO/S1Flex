@@ -104,6 +104,21 @@ body{
     background-color: darkkhaki
 }
 
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+ /*  and (-webkit-min-device-pixel-ratio: 2) */ {
+   .middle{
+    border: 15px solid yellow;
+    flex-direction: column;
+   }
+
+   .middleRight{
+      border-left: none; 
+      border-top: 20px solid yellow;
+   }
+}
+
 
 
 
