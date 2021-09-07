@@ -40,6 +40,7 @@ body{
 
 .upperLower{
     margin: 15px;
+
 }
 
 .upperLower-center{
@@ -107,7 +108,8 @@ body{
 @media only screen 
   and (min-width: 768px) 
   and (max-width: 1024px) 
- /*  and (-webkit-min-device-pixel-ratio: 2) */ {
+ {
+     /* For iPad: */
    .middle{
     border: 15px solid yellow;
     flex-direction: column;
@@ -117,7 +119,55 @@ body{
       border-left: none; 
       border-top: 20px solid yellow;
    }
+
+   .bar-yellow{
+       background-color: burlywood;
+   }
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .upper{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    } 
+    .upperLower{
+        background-color: tomato;
+    }
+    .upperUpper{
+        display : block;
+    }
+   
+    .middle{
+        display: flex;
+        flex-direction: column;
+        border: 15px solid yellow;
+    }
+    .middleRight{
+        border-left: 0;
+        border-top: 20px solid yellow;
+    }
+    .middleLeft{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .middleLeft-up{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bars-left{
+        margin-bottom: -10px;
+    }
+
+    .bar-yellow{
+        background-color: burlywood;
+    }
+  }
+
+
 
 
 
