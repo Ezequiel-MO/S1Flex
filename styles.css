@@ -1,0 +1,271 @@
+body{
+    background-color: #d3d3d3 ; 
+}
+
+.container{
+    background-color: #fff ;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.upper{
+    background-image: url('/assets/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:center;
+    background-position-y: bottom;
+}
+.upperUpper{
+    display: flex;
+    align-items: center;
+}
+
+.upperUpper-left, .upperUpper-center, .upperUpper-right{  
+    padding: 1rem;
+    margin: 15px;
+}
+
+.upperUpper-left, .upperUpper-right{
+    flex: 0.25;
+}
+
+.upperUpper-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.upperUpper-right div:hover{
+    color: blue;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.upperUpper-right div i{
+    margin-bottom: 2rem;
+    font-size: larger;
+}
+
+.upperUpper-left img {
+    height: 3rem;
+    cursor: pointer;
+}
+
+.upperUpper-center{
+    flex: 0.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upperUpper-center div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.upperUpper-center div span {
+    margin-left: 0.5rem;
+}
+
+.upperLower{
+    padding: 1rem;
+}
+
+.upperLower-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    padding: 2rem;
+    color: crimson;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.upperLower-center span i {
+    font-size: xx-large;
+    margin: 1rem;
+}
+
+.middle{
+    display: flex;
+    
+}
+
+.middleLeft{
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.middleRight{
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.middleLeft-up, .middleLeft-down, .middleRight-up, .middleRight-down{
+    margin: 10px 0 7.5px 0 ;
+}
+
+.middleLeft-up, .middleRight-up{     
+    display: flex;
+}
+
+.middleLeft-down{
+    background-color: crimson;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    height: 5rem;
+    margin: 0 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.middleLeft-down p {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.middleLeft-date{
+    position: absolute;
+    bottom: 3.5rem;
+    left:0.6rem;
+    right:0.6rem;
+}
+
+.middleLeft-date p{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.filter-layer{
+    background-color: rgba(0,0,0,0.2);
+}
+
+
+.bars{
+    flex: 1;
+}
+
+.bar-left{
+   height: 28rem;
+   background-image: url('/assets/temple.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   margin: 15px 10px 15px;
+}
+
+.bar-right{
+    height: 28rem;
+   background-image: url('/assets/blossom.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   margin: 15px 10px 15px;
+}
+
+.bar-yellow{
+    height: 20px;
+    background-color: yellow;
+    margin: 15px;
+}
+
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+ {
+     /* For iPad: */
+     .upper{
+        background-position: bottom;
+     }
+
+     .upperLower-center h1{
+        color: crimson;
+        font-size: 2rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+   .middle{
+    
+    flex-direction: column;
+   }
+
+   .middleRight{
+      border-left: none; 
+      
+   }
+
+   .bar-yellow{
+       background-color: burlywood;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .upper{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-position-x:100%;
+        background-position-y: 10%;
+        
+    } 
+    
+    .upperUpper{
+        display : block;
+    }
+
+    .upperLower-center h1{
+        color: crimson;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+   
+    .middle{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .middleRight{
+        border-left: 0;
+    
+    }
+    .middleLeft{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .middleLeft-up{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bars-left{
+        margin-bottom: -10px;
+    }
+
+    .bar-yellow{
+        background-color: burlywood;
+    }
+  }
+
+
+
+
+
+
