@@ -11,7 +11,7 @@ body{
 
 .upper, .middle, .lower{
   display: grid;
-  grid-gap: 20px;
+  gap: 20px;
   background-color: #000;
   padding: 20px;
 }
@@ -20,14 +20,9 @@ body{
     margin-top: 15px;
 }
 
-.upper-item{
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-}
 
 .item1{
     grid-column: 1/12;
-    grid-row: 1;
 }
 
 .item2{
@@ -37,7 +32,7 @@ body{
 
 .upperUpper-container{
     display: grid;
-    grid-gap: 10px;
+    gap: 10px;
     padding: 10px;
     background-color: #2f414f;
 }
@@ -62,7 +57,6 @@ body{
 
 .upperLower-container{
     display: grid;
-    grid-gap: 10px;
     padding: 10px;
     background-color: orangered;
 }
@@ -72,27 +66,17 @@ body{
     padding: 10px;
 }
 
-.item21{
-    grid-column: 1/12;
-    grid-row: 1;
-}
-
 .middle-item{
-    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
 }
 
-
 .item3{
     grid-column: 1/8;
-    grid-row: 1;
 }
 
 .item4{
     grid-column: 8/12;
-    grid-row: 1;
 }
-
 
 .lower-item{
     background-color: rgba(186, 204, 29, 0.8);
@@ -105,26 +89,105 @@ body{
 }
 
 .middleLeft-container{
+    background-color: #2f414f;
+}
+
+.middleRight-container{
+    background-color: crimson;
+    
+}
+
+.bar-container{
     display: grid;
-    grid-gap: 10px;
-    padding: 10px;
-    background-color: #333;
+    gap: 10px;
 }
 
-.middleLeft-item{
+.leftBar-item{
     background-color: blue;
+    padding: 10px; 
+}
+
+.rightBar-item{
+    background-color: lightyellow;
     padding: 10px;
 }
 
-.item31{
+.item3111{
+    grid-column: 1/6;
+}
+
+.item3112{
+    grid-column: 1/6;
+}
+
+.item3113{
+    grid-column: 6/12;
+    grid-row: 1;
+}
+
+.item3114{
+    grid-column: 6/12;
+    grid-row: 2;
+}
+
+.item3115{
+    grid-column: 1/12;
+    grid-row: 3;
+    background-color: lightblue
+}
+
+.item3116{
     grid-column: 1/12;
     grid-row: 1;
 }
 
-.item32{
+.item3117{
     grid-column: 1/12;
     grid-row: 2;
 }
+
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+ {
+     /* For iPad: */
+  .middle{
+      display: block;
+      background-color: yellow;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .middle{
+        display: block;
+        background-color: yellow;
+    }
+    .item3111{
+        grid-column: 1/ span 12;
+        grid-row: 1;
+    }
+    .item3112{
+        grid-column: 1/ span 12;
+        grid-row: 2;
+    }
+    .item3113{
+        grid-column: 1/ span 12;
+        grid-row: 3;
+    }
+    .item3114{
+        grid-column: 1/ span 12;
+        grid-row: 4;
+    }
+    .item3115{
+        grid-column: 1/ span 12;
+        grid-row: 5;
+    }
+    
+}
+
+
+
 
 
 
